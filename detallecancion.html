@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <header>
         <div><img src="" alt="Logo"></div>
-        <form action="" method="GET">
+        <form action="./search-results.html" method="GET">
             <input type="text" name="resultadosbusqueda" value="" placeholder="Búsqueda">
             <button type="submit">Buscar</button>
         </form>
@@ -21,18 +22,19 @@
             </ul>
         </nav>
     </header>
-    <h1>Html detalle 3 - Cantante/artista </h1>
+    <h1>Html detalle 1 -Canción </h1>
     <section>
         <article>
-             <img src="" alt="Foto del cantante/ auydarme">
-             <h2>Foto del cantante/artísta.</h2>
-            <ul>
-                <li>Álbum 1 </li>
-                <li>Álbum 2 </li> 
-                <li>Álbum 3 </li>  
-                <li>Álbum 4</li> 
-                <li>Álbum 5</li>
-            </ul>
+             <h2>Nombre canción</h2>
+             <img src="" alt="Nombre del disco">
+             <h3>Nombre artista</h3>
+             <h4>Disco: nombre del disco</h4>
+             <form action="" method="GET">
+             <button type="submit">Favoritos</button>
+             <input type="radio" name="favoritos" value="mantener">Mantener en favoritos</button>
+             <input type="radio" name="favoritos" value="eliminar">Eliminar de favoritos</button> 
+             </form>
+             <p> Link para ver la playlist personal /?</p>
              
         </article> 
     </section>
@@ -43,5 +45,7 @@
             <li>Valentina Paz</li>
         </ul>
     </footer>
+    <script src="./js/detallecancion.js"></script>
+    <script src="./js/formularioheader.js"></script>
 </body>
 </html>
