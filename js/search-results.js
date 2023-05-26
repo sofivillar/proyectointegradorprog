@@ -1,1 +1,0 @@
-// dcapturar form y ejecutar submmit adentro prevent defaault. capturo input (querySelector) . value IF y voy metiendo ifs git
