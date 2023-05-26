@@ -9,15 +9,17 @@
 </head>
 <body>
     <header>
-        <div><img src="" alt="Logo"></div>
-        <form id="buscador" action="./search-results.html" method="GET">
+        <div class="contenedor-logo"><img class="logo" src="./img/prot logo.jpeg" alt="Logo"></div>
+        <section class="contenedor-buscador">
+            <form id="buscador" action="./search-results.html" method="GET">
             <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="Búsqueda">
-            <button type="submit">Buscar</button>
-        </form>
-        <nav>
-            <ul>
+            <button id="enviarform" type="submit">Buscar</button>
+            </form>
+        </section>
+        <nav class="contenedor-menu">
+            <ul class="menu">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./playlist.html">Playlist/Favoritos</a></li>
+                <li><a href="./playlist.html">Favoritos</a></li>
                 <li><a href="./genres.html">Géneros</a></li>
             </ul>
         </nav>

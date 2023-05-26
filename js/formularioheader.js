@@ -4,9 +4,9 @@ let input = document.querySelector("#busqueda")
 let valor= input.value
 form.addEventListener("submit", function(e){
     e.preventDefault()
-    if(valor == " "){
+    if(valor == 0){
         alert ("El campo esta vacío, ingrese una búsqueda!")
-    }else if(valor < 3){
+    }else if(valor > 1 && valor < 3){
         alert ("El campo debe contener al menos 3 caracteres")
     }else{
         window.location.href= "../search-results.html"

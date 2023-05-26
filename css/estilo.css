@@ -4,6 +4,10 @@
 
  body {
     margin: 0;
+    background-image: url("../img/fondo\ violeta.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 ul, ol {
     padding: 0;
@@ -25,3 +29,75 @@ p{
     margin: 0;
 } */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+}
+
+.contenedor-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: flex-start;
+    padding: 2vw;
+    order: 0;
+    margin: 2vw;
+}
+
+
+.logo {
+    width: 12vw;
+    border-radius: 100%;
+}
+
+.contenedor-buscador {
+    display: flex;
+    justify-self: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2vw;
+    order: 2;
+    align-self: flex-start;
+}
+
+.contenedor-menu{
+    order: 1;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40vw;
+}
+
+.menu li{
+    background-color: rgb(71, 21, 133);
+    border-radius: 0.9vw;
+    border-color: rgb(50, 17, 121);
+    padding: 0.5vw 1vw;
+}
+
+.menu li a{
+    font-size: 2vw;
+    color: white;
+}
+
+#enviarform{
+    background-color: rgb(86, 25, 219);
+    color: white;
+    padding: 0.1vw 0.5vw;
+    border-radius: 0.4vw;
+    border-color: rgb(65, 11, 183);
+    font-weight: bold;
+    width: 8vw;
+    height: 4vh;
+}
+
+#busqueda{
+    width: 12vw;
+    height: 3vh;
+}
