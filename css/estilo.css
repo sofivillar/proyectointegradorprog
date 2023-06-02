@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 ul, ol {
@@ -118,6 +122,9 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     width: 30vw;
+    padding: 3vw 0vw 3vw 0vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-canciones .bloque-cancion img{
@@ -125,6 +132,6 @@ header {
     width: 25vw; 
 }
 
-.contenedor-canciones .bloque-cancion h3{
+/* .contenedor-canciones .bloque-cancion h3{
     /*separar titulo de nombre de artista y album*/
-}
+/* } */
