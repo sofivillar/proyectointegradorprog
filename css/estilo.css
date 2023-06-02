@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
  }
 
  body {
@@ -8,6 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 ul, ol {
     padding: 0;
@@ -42,7 +44,6 @@ header {
     justify-self: flex-start;
     padding: 2vw;
     order: 0;
-    margin: 2vw;
 }
 
 
@@ -100,4 +101,30 @@ header {
 #busqueda{
     width: 12vw;
     height: 3vh;
+}
+
+.contenedor-canciones{
+    display: flex;
+    /*centrar los contenedores de secciones*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95vw;
+    background-color: rgb(119, 58, 251);
+    border-radius: 2vw;
+}
+
+.bloque-cancion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 30vw;
+}
+
+.contenedor-canciones .bloque-cancion img{
+    /*centrar foto en el bloque de la canción*/
+    width: 25vw; 
+}
+
+.contenedor-canciones .bloque-cancion h3{
+    /*separar titulo de nombre de artista y album*/
 }
