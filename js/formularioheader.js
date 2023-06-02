@@ -1,5 +1,7 @@
 let form = document.querySelector("#buscador")
 let input = document.querySelector("#busqueda")
+let urlBuscador = ("https://api.allorigins.win/raw?url=API")
+
 form.addEventListener("submit", function (e) {
     e.preventDefault();
     let valor= input.value.length
@@ -11,3 +13,4 @@ form.addEventListener("submit", function (e) {
         this.submit(); //preguntar. pusimos esto porque window.location.href= "../search-results.html" no funcionaba
     }
 });
+

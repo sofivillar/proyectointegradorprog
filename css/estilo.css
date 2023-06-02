@@ -121,7 +121,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 30vw;
+    width: 130px;
     padding: 3vw 0vw 3vw 0vw;
     justify-content: center;
     align-items: center;
@@ -137,6 +137,68 @@ header {
 /* } */
 
 .bloque-cancion-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*aca copiamos el css de contenedor canciones*/
+
+.contenedor-album{
+    display: flex;
+    /*centrar los contenedores de secciones*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95vw;
+    background-color: rgb(119, 58, 251);
+    border-radius: 2vw;
+}
+
+.bloque-album{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 130px;
+    padding: 3vw 0vw 3vw 0vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-album .bloque-album img{
+    width: 25vw; 
+}
+
+.bloque-album-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-artista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95vw;
+    background-color: rgb(119, 58, 251);
+    border-radius: 2vw;
+}
+
+.bloque-artista{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 130px;
+    padding: 3vw 0vw 3vw 0vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-artista .bloque-artista img{
+    width: 25vw; 
+}
+
+.bloque-artista-datos{
     display: flex;
     flex-direction: column;
     justify-content: center;
