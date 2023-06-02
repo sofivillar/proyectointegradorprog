@@ -135,3 +135,10 @@ header {
 /* .contenedor-canciones .bloque-cancion h3{
     /*separar titulo de nombre de artista y album*/
 /* } */
+
+.bloque-cancion-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
