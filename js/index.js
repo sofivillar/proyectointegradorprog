@@ -19,7 +19,7 @@ fetch (url)
                 <img src="${arrayCanciones[i].artist.picture}" alt="${arrayCanciones[i].title}"> 
                 <article class="bloque-cancion-datos">
                     <a href="./detalledisco.html?">${arrayCanciones[i].album.title}</a>
-                    <a href="./detallesartista.html?COMPLETARQS">${arrayCanciones[i].artist.name}</a>  
+                    <a href="./detallesartista.html?id=${arrayCanciones[i].artist.name}">${arrayCanciones[i].artist.name}</a>  
                 </article>
         </article>`
         }
