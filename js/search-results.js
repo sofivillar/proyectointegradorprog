@@ -29,3 +29,29 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
     .catch(function(e){
         console.log(e);
     })
+
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${busqueda}`)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+        let arrayAlbumes = data.data
+
+        console.log(arrayAlbumes); 
+        
+        let listaAlbumes= document.querySelector(".contenedor-album");
+        let albumes=""
+        for(let i=0; i< 5; i++){
+            albumes += `<article class= "bloque-album"> <h3> <a class="nombre-album" href="./detalledisco.html?id=${arrayAlbumes[i].id}">${arrayAlbumes[i].title}</a></h3>
+                <img src="${arrayAlbumes[i].cover}" alt="${arrayAlbumes[i].title}"> 
+                <article class="bloque-album-datos">
+                    <a href="./detallesartista.html?id=${arrayAlbumes[i].artist.name}">${arrayAlbumes[i].artist.name}</a>  
+                </article>
+            </article>`
+        }
+        listaAlbumes.innerHTML= albumes
+    })
+    .catch(function(e){
+        console.log(e);
+    })
