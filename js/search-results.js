@@ -5,7 +5,7 @@ let busqueda= qsToObject.get("resultadosbusqueda");
 let tituloResultados = document.querySelector("h1")
 tituloResultados.innerText += ` ${busqueda}` 
 
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${busqueda}`)
+fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/search/track?q=${busqueda}`)
     .then(function(response){
         return response.json();
     })
@@ -30,7 +30,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
         console.log(e);
     })
 
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${busqueda}`)
+    fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/search/album?q=${busqueda}`)
     .then(function(response){
         return response.json();
     })
@@ -56,7 +56,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
         console.log(e);
     })
 
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${busqueda}`)
+    fetch(`https://api.allorigins.win/raw?url=https://api.deezer.com/search/artist?q=${busqueda}`)
     .then(function(response){
         return response.json();
     })
