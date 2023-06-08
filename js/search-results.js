@@ -55,3 +55,28 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
     .catch(function(e){
         console.log(e);
     })
+
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${busqueda}`)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+        let arrayArtistas = data.data
+
+        console.log(arrayArtistas); 
+        
+        let listaArtistas= document.querySelector(".contenedor-artista");
+        let artistas=""
+        for(let i=0; i< 5; i++){
+            artistas += `<article class= "bloque-artista"> <h3> <a class="nombre-artista" href="./detallesartista.html?id=${arrayArtistas[i].id}">${arrayArtistas[i].name}</a></h3>
+                <img src="${arrayArtistas[i].picture}" alt="${arrayArtistas[i].name}"> 
+                <article class="bloque-artista-datos">
+                </article>
+        </article>`
+        }
+        listaArtistas.innerHTML= artistas
+    })
+    .catch(function(e){
+        console.log(e);
+    })
