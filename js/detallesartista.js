@@ -28,4 +28,3 @@ fetch(url)
     console.log(e);
 })
 
-/*en la linea 21 hay que hacer un for, y otro fetch para acceder a la url de los albumes?*/

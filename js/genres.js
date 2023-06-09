@@ -1,5 +1,4 @@
 const url= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre";
-
 /* let params= new URLSearchParams (urlHome.search);
 console.log(params); */
  
@@ -9,21 +8,17 @@ fetch (url)
     })
     .then(function(data){
       
-        let arrayGeneros= data.genre.data;
-        console.log(arrayCanciones); 
+        let arrayGeneros= data.data;
+        console.log(arrayGeneros); 
         
-        let listaCanciones= document.querySelector(".contenedor-canciones");
-        let canciones=""
-        for(let i=0; i< 5; i++){
-            canciones += `<article class= "bloque-cancion"> <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}">${arrayCanciones[i].title}</a></h3>
-                <img src="${arrayCanciones[i].artist.picture}" alt="${arrayCanciones[i].title}"> 
-                <article class="bloque-cancion-datos">
-                    <a href="./detalledisco.html?">${arrayCanciones[i].album.title}</a>
-                    <a href="./detallesartista.html?id=${arrayCanciones[i].artist.name}">${arrayCanciones[i].artist.name}</a>  
-                </article>
-        </article>`
+        let listaGeneros= document.querySelector(".contenedor-generos");
+        let generos=""
+        for(let i=1; i< 11; i++){
+            generos += `<article class= "bloque-generos"> <ul class="lista-generos"> <li> <a class="genero" href="./detail-genres.html?id=${arrayGeneros[i].id}">${arrayGeneros[i].name}</a> </li> </ul>
+                <img src="${arrayGeneros[i].picture}" alt="${arrayGeneros[i].name}"> 
+            </article>`
         }
-        listaCanciones.innerHTML= canciones
+        listaGeneros.innerHTML= generos
         
     })
     .catch(function(error){
