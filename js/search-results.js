@@ -5,6 +5,8 @@ let busqueda= qsToObject.get("resultadosbusqueda");
 let tituloResultados = document.querySelector("h1")
 tituloResultados.innerText += ` ${busqueda}` 
 
+//if(!busqueda =/= al objeto) (?)
+
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${busqueda}`)
     .then(function(response){
         return response.json();
@@ -23,7 +25,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
                     <a href="./detallesartista.html?id=${arrayCanciones[i].artist.id}">${arrayCanciones[i].artist.name}</a>  
                 </article>
         </article>`
-        //PORQUE LA LINEA 22 FUNCIONA por mas que no tenga id en la a, para que sirve el id en la a 
+        
         }
         listaCanciones.innerHTML= canciones
     })

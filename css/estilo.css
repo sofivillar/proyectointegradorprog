@@ -231,3 +231,10 @@ footer ul li{
     color:  rgb(212, 121, 251);
     border-radius: 0.9vw;
 }
+
+body .cuerpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
