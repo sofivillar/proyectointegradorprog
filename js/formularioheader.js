@@ -10,7 +10,7 @@ form.addEventListener("submit", function (e) {
     } else if (valor < 3) {
         alert("El campo debe contener al menos 3 caracteres")
     } else {
-        this.submit(); //preguntar. pusimos esto porque window.location.href= "../search-results.html" no funcionaba
+        this.submit(); 
     }
 });
 

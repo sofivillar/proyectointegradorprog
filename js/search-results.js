@@ -5,7 +5,7 @@ let busqueda= qsToObject.get("resultadosbusqueda");
 let tituloResultados = document.querySelector("h1")
 tituloResultados.innerText += ` ${busqueda}` 
 
-//if(!busqueda =/= al objeto) (?)
+if(!busqueda =/= al objeto) (?)
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${busqueda}`)
     .then(function(response){
@@ -14,7 +14,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
     .then(function(data){
         console.log(data);
         let arrayCanciones = data.data
-
+    if(arrayCanciones.length==0){
+        canciones+= "<p>No hay resultados busqueda</p>"
+        listaCanciones.innerHTML= canciones
+    }
         let listaCanciones= document.querySelector(".contenedor-canciones");
         let canciones=""
         for(let i=0; i< 5; i++){
