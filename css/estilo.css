@@ -109,7 +109,6 @@ header {
 
 .contenedor-canciones{
     display: flex;
-    /*centrar los contenedores de secciones*/
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 95vw;
@@ -128,13 +127,10 @@ header {
 }
 
 .contenedor-canciones .bloque-cancion img{
-    /*centrar foto en el bloque de la canción*/
     width: 25vw; 
 }
 
-/* .contenedor-canciones .bloque-cancion h3{
-    /*separar titulo de nombre de artista y album*/
-/* } */
+
 
 .bloque-cancion-datos{
     display: flex;
@@ -142,11 +138,9 @@ header {
     justify-content: center;
     align-items: center;
 }
-/*aca copiamos el css de contenedor canciones*/
 
 .contenedor-album{
     display: flex;
-    /*centrar los contenedores de secciones*/
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 95vw;
@@ -237,4 +231,12 @@ body .cuerpo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.detalle-disco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
