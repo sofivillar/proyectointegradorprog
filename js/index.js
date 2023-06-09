@@ -1,4 +1,4 @@
-const url= "https://api.allorigins.win/raw?url=https://api.deezer.com/chart";
+const url= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart";
 
 /* let params= new URLSearchParams (urlHome.search);
 console.log(params); */
