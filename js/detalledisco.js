@@ -7,7 +7,7 @@ let titulo= document.querySelector(".titulo-detalle-d")
 let tituloResultados = document.querySelector("h1")
 tituloResultados.innerText += `${disco.title}` 
 
-let url =`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${disco}`
+let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/album/${disco}`
 fetch(url)
     .then(function(response){
         return response.json();
@@ -25,7 +25,7 @@ fetch(url)
                 </article>
         </article>`
         contenedorDisco.innerHTML=  `${discoDatos}` 
-        titulo.innerText= `Detalles de la canción: ${data.title}`
+        titulo.innerText= `Detalles del album: ${data.title}`
 
     })
 .catch(function(e){

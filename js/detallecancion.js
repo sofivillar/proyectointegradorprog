@@ -18,8 +18,8 @@ fetch(url)
         let cancion = `<article class= "bloque-cancion"> <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${data.id}">${data.title}</a></h3>
                 <img src="${data.album.cover}" alt="${data.title}"> 
                 <article class="bloque-cancion-datos">
-                    <a href="./detalledisco.html?id=${data.album.title}">${data.album.title}</a>
-                    <a href="./detallesartista.html?id=${data.artist.name}">${data.artist.name}</a>  
+                    <a href="./detalledisco.html?id=${data.album.id}">${data.album.title}</a>
+                    <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a>  
                 </article>
         </article>`
         contenedorCancion.innerHTML=  `${cancion}` 

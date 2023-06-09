@@ -18,8 +18,8 @@ fetch (url)
             canciones += `<article class= "bloque-cancion"> <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}">${arrayCanciones[i].title}</a></h3>
                 <img src="${arrayCanciones[i].artist.picture}" alt="${arrayCanciones[i].title}"> 
                 <article class="bloque-cancion-datos">
-                    <a href="./detalledisco.html?">${arrayCanciones[i].album.title}</a>
-                    <a href="./detallesartista.html?id=${arrayCanciones[i].artist.name}">${arrayCanciones[i].artist.name}</a>  
+                    <a href="./detalledisco.html?id=${arrayCanciones[i].album.id}">${arrayCanciones[i].album.title}</a>
+                    <a href="./detallesartista.html?id=${arrayCanciones[i].artist.id}">${arrayCanciones[i].artist.name}</a>  
                 </article>
         </article>`
         }
@@ -45,7 +45,7 @@ fetch (url)
             albumes += `<article class= "bloque-album"> <h3> <a class="nombre-album" href="./detalledisco.html?id=${arrayAlbumes[i].id}">${arrayAlbumes[i].title}</a></h3>
                 <img src="${arrayAlbumes[i].cover}" alt="${arrayAlbumes[i].title}"> 
                 <article class="bloque-album-datos">
-                    <a href="./detallesartista.html?id=${arrayAlbumes[i].artist.name}">${arrayAlbumes[i].artist.name}</a>  
+                    <a href="./detallesartista.html?id=${arrayAlbumes[i].artist.id}">${arrayAlbumes[i].artist.name}</a>  
                 </article>
         </article>`
         }

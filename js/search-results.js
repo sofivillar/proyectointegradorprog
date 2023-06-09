@@ -19,8 +19,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
             canciones += `<article class= "bloque-cancion"> <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}">${arrayCanciones[i].title}</a></h3>
                 <img src="${arrayCanciones[i].album.cover}" alt="${arrayCanciones[i].title}"> 
                 <article class="bloque-cancion-datos">
-                    <a href="./detalledisco.html?id=${arrayCanciones[i].album.title}">${arrayCanciones[i].album.title}</a>
-                    <a href="./detallesartista.html?id=${arrayCanciones[i].artist.name}">${arrayCanciones[i].artist.name}</a>  
+                    <a href="./detalledisco.html?id=${arrayCanciones[i].album.id}">${arrayCanciones[i].album.title}</a>
+                    <a href="./detallesartista.html?id=${arrayCanciones[i].artist.id}">${arrayCanciones[i].artist.name}</a>  
                 </article>
         </article>`
         //PORQUE LA LINEA 22 FUNCIONA por mas que no tenga id en la a, para que sirve el id en la a 
@@ -47,7 +47,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
             albumes += `<article class= "bloque-album"> <h3> <a class="nombre-album" href="./detalledisco.html?id=${arrayAlbumes[i].id}">${arrayAlbumes[i].title}</a></h3>
                 <img src="${arrayAlbumes[i].cover}" alt="${arrayAlbumes[i].title}"> 
                 <article class="bloque-album-datos">
-                    <a href="./detallesartista.html?id=${arrayAlbumes[i].artist.name}">${arrayAlbumes[i].artist.name}</a>  
+                    <a href="./detallesartista.html?id=${arrayAlbumes[i].artist.id}">${arrayAlbumes[i].artist.name}</a>  
                 </article>
             </article>`
         }
