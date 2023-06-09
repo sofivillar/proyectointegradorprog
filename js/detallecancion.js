@@ -25,7 +25,7 @@ fetch(url)
                 <button class="agregar-favoritos" type="submit">Añadir a favoritos</button>
                 </form>
         </article>`
-        contenedorCancion.innerHTML=  `${cancion}` 
+        contenedorCancion.innerHTML=  cancion 
         titulo.innerText= `Detalles de la canción: ${data.title}`
 
     })

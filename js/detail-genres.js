@@ -17,7 +17,7 @@ fetch(url)
         tituloResultados.innerText = `Detalles del genero: ${data.name}` 
         let generosDatos = `<h2 class="nombre-genero">${data.name}</h2> <article class= "bloque-detalle-generos"> <ul class="lista-detalle-generos"> <li> <p class="detalle-generos"></p> </li> </ul> 
         </article>`
-        contenedorGeneros.innerHTML= `${generosDatos}`
+        contenedorGeneros.innerHTML= generosDatos
     })
     .catch(function(error){
         console.log( "Error: " + error);

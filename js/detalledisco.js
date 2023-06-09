@@ -29,6 +29,7 @@ fetch(url)
                              <a href="./detail-genres.html?id=${data.genres.data[0].id}">${data.genres.data[0].name}</a>
                              <p>Fecha de publicación del disco: ${data.release_date}</p>
                           </article>
+                          <p>Canciones del album:</p>
                           <ul> ${canciones}</ul>
                           `
 
@@ -43,22 +44,3 @@ fetch(url)
 
 
 
-// fetch (urlCanciones)
-// .then(function(response){
-//     return response.json();
-// })
-// .then(function(data){
-//     console.log(data)
-//     let arrayCanciones= data.data;
-//     console.log(arrayCanciones); 
-//     let canciones=""
-//     for(let i=0; i< 5; i++){
-//         canciones += `<ul class="lista-detalle-disco"> <li> <a class="detalle-cancion" href="./detallecancion.html?id=${arrayCanciones[i].data.id}">${arrayCanciones[i].data.title}</a> </li> </ul> 
-//         </article>`
-//     }
-//     contenedorDisco.innerHTML += canciones
-    
-// })
-// .catch(function(error){
-//     console.log( "Error: " + error);
-// })
