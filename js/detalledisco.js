@@ -15,16 +15,13 @@ fetch(url)
     })
     .then(function(data){
         console.log(data);
-        let discoDatos = `<article class= "detalle-disco">
+        let discoDatos = `<article class="detalle-disco">
                              <a class="nombre-disco" href="./detalledisco.html?id=${data.id}">${data.title}</a> <img src="${data.cover}" alt="${data.title}">
-                             <a href="./detallesartista.html?id=${data.artist.id}">sfs${data.artist.name}</a>
-                             adfsfsdfsdfsdfs
-                             sdfsdf
-                             sdfsdf
-                             sdfsdfsd
-                             <a href="./detail-genres.html?id=${data.genres.data[0].id}>${data.genres.data[0].name}</a>
-                             <p>Fecha de publicacion del disco:${data.release_date}</p>
-                            </article>`
+                             <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a>
+                             <a href="./detail-genres.html?id=${data.genres.data[0].id}">${data.genres.data[0].name}</a>
+                             <p>Fecha de publicación del disco: ${data.release_date}</p>
+
+                          </article>`
         contenedorDisco.innerHTML= discoDatos 
         titulo.innerText= `Detalles del album: ${data.title}`
         
