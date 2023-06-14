@@ -32,3 +32,16 @@ fetch(url)
 .catch(function(e){
     console.log(e);
 })
+
+let cancionFav= [];
+let botonFavs= document.querySelector("#favs");
+
+botonFavs.addEventListener("click", function(){
+    cancionFav.push(cancion);
+    cancionToJson = JSON.stringify(cancionFav);
+    localStorage.setItem("listaFavoritos", cancionToJson) 
+    console.log(localStorage);
+})
+
+//no se guarda nada en el local.storage. ale lo hace con una <a> en vez de con button. chequear y terminar
+

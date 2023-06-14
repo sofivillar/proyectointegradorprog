@@ -20,7 +20,7 @@ fetch(url)
         let arrayCanciones=data.tracks.data
         for(i=0; i<arrayCanciones.length; i++){
             //canciones+= arrayCanciones[i].title+" "
-            canciones += "<li>" + arrayCanciones[i].title + "</li>"
+            canciones += `<li> <a href="./detallecancion.html?id=${arrayCanciones[i].id}"> ${arrayCanciones[i].title} </a> </li>`
         }
         console.log(canciones)
         let discoDatos = `<article class="detalle-disco">

@@ -140,8 +140,6 @@ header {
     width: 25vw;
 }
 
-
-
 .bloque-cancion-datos {
     display: flex;
     flex-direction: column;
@@ -333,4 +331,27 @@ body .cuerpo {
     top: 0;
     left: 0;
     transition: 2, 8 ease;
+  }
+
+  .contenedor-detalle-disco{
+    background-color: rgb(146, 40, 192);
+    padding: 5vw;
+    border-radius: 2%;
+  }
+
+  .contenedor-detalle-artistas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(146, 40, 192);
+    padding: 5vw;
+    border-radius: 2%;
+  }
+
+  .contenedor-detalle-canciones{
+    background-color: rgb(146, 40, 192);
+    padding: 3vw 10vw;
+    border-radius: 2%;
   }

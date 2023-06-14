@@ -41,7 +41,7 @@ fetch(urlAlbums)
         let albums = ""
         let arrayAlbums= data.data
         for(i=0; i<5; i++){
-            albums += `<li> ${arrayAlbums[i].title} </li>`
+            albums += `<li> <a href="./detalledisco.html?id=${arrayAlbums[i].id}"> ${arrayAlbums[i].title} </a> </li>`
         }
         contenedorArtista.innerHTML +=  albums
     })
