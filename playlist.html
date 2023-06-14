@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,14 @@
     <title>Playlist/Favoritos</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
+
 <body>
     <header>
         <div class="contenedor-logo"><img class="logo" src="./img/prot logo.jpeg" alt="Logo"></div>
         <section class="contenedor-buscador">
             <form id="buscador" action="./search-results.html" method="GET">
-            <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="Búsqueda">
-            <button id="enviarform" type="submit">Buscar</button>
+                <input id="busqueda" type="text" name="resultadosbusqueda" value="" placeholder="Búsqueda">
+                <button id="enviarform" type="submit">Buscar</button>
             </form>
         </section>
         <nav class="contenedor-menu">
@@ -24,13 +26,19 @@
             </ul>
         </nav>
     </header>
+    <div class="lds-ring loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>  
     <h1 class="titulo">Tus canciones favoritas</h1>
     <section class="contenedor-canciones">
         <article class="bloque-cancion">
             <h3> <a href="./detallecancion.html">Nombre de la cancion</a></h3>
             <p> <a href="./detalledisco.html">Nombre del album</a></p>
             <p> <a href="./detallesartista.html">Nombre del artista</a></p>
-            <img src="https://www.lanacion.com.ar/resizer/T4rxHe3vEceoHrMQl7nL99bJnho=/1200x800/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/QY4ZED4PGZDNRKD5ADUYKLIS7Q.jpg" alt="Harry"> 
+            <img src="" alt="">
         </article>
     </section>
     <footer>
@@ -42,5 +50,7 @@
     </footer>
     <script src="./js/playlist.js"></script>
     <script src="./js/formularioheader.js"></script>
+    <script src="./js/loader.js"></script>
 </body>
+
 </html>

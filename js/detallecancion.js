@@ -22,7 +22,7 @@ fetch(url)
                    <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a> 
                 </article>
                 <form action="./playlist.html" method="GET">
-                <button class="agregar-favoritos" type="submit">Añadir a favoritos</button>
+                <button id="favs" type="submit">Añadir a favoritos</button>
                 </form>
         </article>`
         contenedorCancion.innerHTML=  cancion 

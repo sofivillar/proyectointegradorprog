@@ -24,6 +24,12 @@
             </ul>
         </nav>
     </header>
+    <div class="lds-ring loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>  
     <h1 class="titulo-detalle-c">Html detalle 1 -Canción </h1>
     <section class="contenedor-detalle-canciones">
         <article class="detalle-cancion">
@@ -32,7 +38,7 @@
              <p>Nombre artista</p>
              <p>Disco: nombre del disco</p>
              <form action="./playlist.html" method="GET">
-             <button class="agregar-favoritos" type="submit">Añadir a favoritos</button>
+             <button id="favs" type="submit">Añadir a favoritos</button>
              </form>
              <p> Link para ver la playlist personal /?</p>
              
@@ -48,5 +54,6 @@
     </footer>
     <script src="./js/detallecancion.js"></script>
     <script src="./js/formularioheader.js"></script>
+    <script src="./js/loader.js"></script>
 </body>
 </html>
