@@ -20,7 +20,7 @@ fetch(url)
     })
     .then(function(data){
         console.log(data);
-        let artista = `<article class= "detalle-artista"> <h3> <a class="nombre-artista" href="./detallesartista.html?id=${data.id}">${data.name}</a></h3>
+        let artista = `<article class= "detalle-artista"> <h2> <a class="nombre-artista" href="./detallesartista.html?id=${data.id}">${data.name}</a></h2>
                 <img src="${data.picture}" alt="${data.name}"> 
         </article>`
         contenedorArtista.innerHTML=  artista 

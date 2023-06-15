@@ -209,6 +209,11 @@ header {
     align-items: center;
 }
 
+.nombre-artista {
+    display: flex;
+    justify-content: center;
+}
+
 .titulo {
     color: white;
 }
@@ -251,13 +256,20 @@ body .cuerpo {
 
 .contenedor-generos {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 95vw;
+    background-color: rgb(146, 40, 192);
+    border-radius: 2vw;
 }
 
 .bloque-generos {
-    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw;
+    width: 18vw;
+    
 }
 
 .lista-generos li a {
@@ -282,6 +294,10 @@ body .cuerpo {
     align-items: center;
     flex-wrap: wrap;
     padding: 3vw;
+}
+
+.foto-genero{
+   
 }
 
 .lds-ring {
