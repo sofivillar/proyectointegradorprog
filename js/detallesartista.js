@@ -21,7 +21,7 @@ fetch(url)
     .then(function(data){
         console.log(data);
         let artista = `<article class= "detalle-artista"> <h2> <a class="nombre-artista" href="./detallesartista.html?id=${data.id}">${data.name}</a></h2>
-                <img src="${data.picture}" alt="${data.name}"> 
+        <a class="nombre-artista" href="./detallesartista.html?id=${data.id}"><img src="${data.picture}" alt="${data.name}"></a>
         </article>`
         contenedorArtista.innerHTML=  artista 
         titulo.innerText= `Detalles del artista: ${data.name}`

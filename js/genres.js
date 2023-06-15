@@ -15,7 +15,7 @@ fetch (url)
         let generos=""
         for(let i=1; i< 11; i++){
             generos += `<article class= "bloque-generos"> <ul class="lista-generos"> <li> <h2> <a class="genero" href="./detail-genres.html?id=${arrayGeneros[i].id}">${arrayGeneros[i].name}</a> </h2> </li> </ul>
-                <img class="foto-genero" src="${arrayGeneros[i].picture}" alt="${arrayGeneros[i].name}"> 
+            <a class="genero" href="./detail-genres.html?id=${arrayGeneros[i].id}"><img class="foto-genero" src="${arrayGeneros[i].picture}" alt="${arrayGeneros[i].name}"></a>
             </article>`
         }
         listaGeneros.innerHTML= generos

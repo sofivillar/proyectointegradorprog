@@ -14,10 +14,11 @@ fetch(url)
         console.log(data);
         let contenedorCancion = document.querySelector(".contenedor-detalle-canciones");
         let cancion = `<article class= "bloque-cancion"> <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${data.id}">${data.title}</a></h3>
-                <img src="${data.album.cover}" alt="${data.title}"> 
+        <a class="nombre-cancion" href="./detallecancion.html?id=${data.id}"><img src="${data.album.cover}" alt="${data.title}"></a> 
                 <article class="bloque-cancion-datos">
                    <a href="./detalledisco.html?id=${data.album.id}">${data.album.title}</a>
                    <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a> 
+                   <div class="mis-favs"><a href="./playlist.html">Mis Favoritos</a></div>
                 </article>
         </article>`
         contenedorCancion.innerHTML += cancion

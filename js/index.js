@@ -16,7 +16,7 @@ fetch (url)
         let canciones=""
         for(let i=0; i< 5; i++){
             canciones += `<article class= "bloque-cancion"> <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}">${arrayCanciones[i].title}</a></h3>
-                <img src="${arrayCanciones[i].artist.picture}" alt="${arrayCanciones[i].title}"> 
+            <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}"><img class="fotos" src="${arrayCanciones[i].artist.picture}" alt="${arrayCanciones[i].title}"></a> 
                 <article class="bloque-cancion-datos">
                     <a href="./detalledisco.html?id=${arrayCanciones[i].album.id}">${arrayCanciones[i].album.title}</a>
                     <a href="./detallesartista.html?id=${arrayCanciones[i].artist.id}">${arrayCanciones[i].artist.name}</a>  
@@ -43,7 +43,7 @@ fetch (url)
         let albumes=""
         for(let i=0; i< 5; i++){
             albumes += `<article class= "bloque-album"> <h3> <a class="nombre-album" href="./detalledisco.html?id=${arrayAlbumes[i].id}">${arrayAlbumes[i].title}</a></h3>
-                <img src="${arrayAlbumes[i].cover}" alt="${arrayAlbumes[i].title}"> 
+            <a class="nombre-album" href="./detalledisco.html?id=${arrayAlbumes[i].id}"><img src="${arrayAlbumes[i].cover}" alt="${arrayAlbumes[i].title}"> </a>
                 <article class="bloque-album-datos">
                     <a href="./detallesartista.html?id=${arrayAlbumes[i].artist.id}">${arrayAlbumes[i].artist.name}</a>  
                 </article>
@@ -69,7 +69,7 @@ fetch (url)
         let artistas=""
         for(let i=0; i< 5; i++){
             artistas += `<article class= "bloque-artista"> <h3> <a class="nombre-artista" href="./detallesartista.html?id=${arrayArtistas[i].id}">${arrayArtistas[i].name}</a></h3>
-                <img src="${arrayArtistas[i].picture}" alt="${arrayArtistas[i].name}"> 
+            <a class="nombre-artista" href="./detallesartista.html?id=${arrayArtistas[i].id}"><img src="${arrayArtistas[i].picture}" alt="${arrayArtistas[i].name}"></a>
                 <article class="bloque-artista-datos">
                 </article>
         </article>`
