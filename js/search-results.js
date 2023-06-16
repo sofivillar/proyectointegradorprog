@@ -12,8 +12,6 @@ let listaArtistas = document.querySelector(".contenedor-artista");
 
 tituloResultados.innerText += ` ${busqueda}`
 
-// if(!busqueda =/= al objeto) (?)
-//chequear que el if est
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${busqueda}`)
     .then(function (response) {
@@ -86,14 +84,68 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
             listaArtistas.innerHTML = albumes
         } else {
             for (let i = 0; i < 5; i++) {
-            artistas += `<article class= "bloque-artista"> <h3> <a class="nombre-artista" href="./detallesartista.html?id=${arrayArtistas[i].id}">${arrayArtistas[i].name}</a></h3>
+                artistas += `<article class= "bloque-artista"> <h3> <a class="nombre-artista" href="./detallesartista.html?id=${arrayArtistas[i].id}">${arrayArtistas[i].name}</a></h3>
             <a class="nombre-artista" href="./detallesartista.html?id=${arrayArtistas[i].id}"><img src="${arrayArtistas[i].picture}" alt="${arrayArtistas[i].name}"></a>
                 <article class="bloque-artista-datos">
                 </article>
         </article>`
-        listaArtistas.innerHTML = artistas
-        }}
+                listaArtistas.innerHTML = artistas
+            }
+        }
     })
     .catch(function (e) {
         console.log(e);
     })
+
+
+
+
+let contenedorVerMas = document.querySelector(".ver-mas")
+let cancionesMas = ""
+
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${busqueda}`)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+        let arrayCancionesMas = data.data
+        if (arrayCancionesMas.length == 0) {
+            cancionesMas += "<p>No hay resultados para su búsqueda</p>"
+            contenedorVerMas.innerHTML = cancionesMas
+        } else {
+            for (let i = 5; i < 11; i++) {
+                cancionesMas += `<article class= "bloque-cancion-mas"> 
+                <h3> <a class="nombre-cancion-mas" href="./detallecancion.html?id=${arrayCancionesMas[i].id}">${arrayCancionesMas[i].title}</a></h3>
+                <a class="nombre-cancion-mas" href="./detallecancion.html?id=${arrayCancionesMas[i].id}"><img src="${arrayCancionesMas[i].album.cover}" alt="${arrayCancionesMas[i].title}"></a> 
+                <article class="bloque-cancion-datos-mas">
+                    <a href="./detalledisco.html?id=${arrayCancionesMas[i].album.id}">${arrayCancionesMas[i].album.title}</a>
+                    <a href="./detallesartista.html?id=${arrayCancionesMas[i].artist.id}">${arrayCancionesMas[i].artist.name}</a>  
+                </article>
+                </article>`
+                contenedorVerMas.innerHTML = cancionesMas
+            }
+        }
+
+    })
+    .catch(function (e) {
+        console.log(e);
+    })
+
+    let botonVerMas = document.querySelector(".boton-ver-mas")
+
+    botonVerMas.addEventListener("click", function(){
+        if(botonVerMas.innerText == "Ver mas"){
+            botonVerMas.innerText= "Ver menos"
+            contenedorVerMas.style.display = "flex"
+        } else{
+            botonVerMas.innerText= "Ver mas"
+            contenedorVerMas.style.display = "none"
+        }
+
+    })
+
+
+
+
+

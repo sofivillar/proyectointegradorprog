@@ -428,3 +428,12 @@ body .cuerpo {
     flex-wrap: wrap;
     font-size: 1.7vw;
 }
+
+/* .boton-ver-mas{
+    display: flex;
+
+} */
+
+.ver-mas{
+    display: none;
+}

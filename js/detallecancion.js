@@ -18,7 +18,7 @@ fetch(url)
                 <article class="bloque-cancion-datos">
                    <a href="./detalledisco.html?id=${data.album.id}">${data.album.title}</a>
                    <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a> 
-                   <div class="mis-favs"><a href="./playlist.html">Mis Favoritos</a></div>
+                   <div class="mis-favs"><a href="./playlist.html">Ir a Favoritos</a></div>
                    <audio controls><source src="${data.preview}" type="audio/mpeg">Your browser does not support the audio element.</audio>
                 </article>
         </article>`
