@@ -299,6 +299,15 @@ body .cuerpo {
     padding: 3vw;
 }
 
+.contenedor-detalle-generos-mas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95vw;
+    background-color: rgb(146, 40, 192);
+    border-radius: 2vw;
+}
+
 .lds-ring {
     display: inline-block;
     position: relative;
@@ -449,4 +458,52 @@ body .cuerpo {
 
 .contenedor-detalle-generos-mas{
     display: none;
+}
+
+.boton-ver-mas-canciones{
+    background-color: rgb(71, 21, 133);
+    color: white;
+    margin: 2vw;
+    padding: 0.1vw 0.5vw;
+    border-radius: 0.4vw;
+    border-color: rgb(58, 14, 112);
+    font-weight: bold;
+    width: 8vw;
+    height: 4vh;
+}
+
+.boton-ver-mas-albumes{
+    background-color: rgb(71, 21, 133);
+    color: white;
+    margin: 2vw;
+    padding: 0.1vw 0.5vw;
+    border-radius: 0.4vw;
+    border-color: rgb(58, 14, 112);
+    font-weight: bold;
+    width: 8vw;
+    height: 4vh;
+}
+
+.boton-ver-mas-artistas{
+    background-color: rgb(71, 21, 133);
+    color: white;
+    margin: 2vw;
+    padding: 0.1vw 0.5vw;
+    border-radius: 0.4vw;
+    border-color: rgb(58, 14, 112);
+    font-weight: bold;
+    width: 8vw;
+    height: 4vh;
+}
+
+.boton-ver-mas-generos{
+    background-color: rgb(71, 21, 133);
+    color: white;
+    margin: 2vw;
+    padding: 0.1vw 0.5vw;
+    border-radius: 0.4vw;
+    border-color: rgb(58, 14, 112);
+    font-weight: bold;
+    width: 8vw;
+    height: 4vh;
 }
