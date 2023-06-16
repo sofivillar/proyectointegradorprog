@@ -18,10 +18,10 @@ if(recuperoStorage !== undefined|| favoritos.length !==0){
         .then(function (data) {
             console.log(data);
              miPlaylist += `<article class= "bloque-cancion"> <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${data.id}">${data.title}</a></h3>
-            <a class="nombre-cancion" href="./detallecancion.html?id=${data.id}"><img src="${data.album.cover}" alt="${data.title}"></a> 
-                    <article class="bloque-cancion-datos">
-                       <a href="./detalledisco.html?id=${data.album.id}">${data.album.title}</a>
-                       <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a> 
+                        <a class="nombre-cancion" href="./detallecancion.html?id=${data.id}"><img src="${data.album.cover}" alt="${data.title}"></a> 
+                        <article class="bloque-cancion-datos">
+                        <a href="./detalledisco.html?id=${data.album.id}">${data.album.title}</a>
+                        <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a> 
                     </article>
             </article>`
             contenedorFavs.innerHTML = miPlaylist

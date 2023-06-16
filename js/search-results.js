@@ -27,8 +27,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
             for (let i = 0; i < 5; i++) {
                 canciones += `<article class= "bloque-cancion"> 
                 <h3> <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}">${arrayCanciones[i].title}</a></h3>
-                <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}"><img src="${arrayCanciones[i].album.cover}" alt="${arrayCanciones[i].title}"></a> 
-                <article class="bloque-cancion-datos">
+                    <a class="nombre-cancion" href="./detallecancion.html?id=${arrayCanciones[i].id}"><img src="${arrayCanciones[i].album.cover}" alt="${arrayCanciones[i].title}"></a> 
+                    <article class="bloque-cancion-datos">
                     <a href="./detalledisco.html?id=${arrayCanciones[i].album.id}">${arrayCanciones[i].album.title}</a>
                     <a href="./detallesartista.html?id=${arrayCanciones[i].artist.id}">${arrayCanciones[i].artist.name}</a>  
                 </article>

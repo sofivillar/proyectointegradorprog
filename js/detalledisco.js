@@ -24,7 +24,8 @@ fetch(url)
         }
         console.log(canciones)
         let discoDatos = `<article class="detalle-disco">
-                             <a class="nombre-disco" href="./detalledisco.html?id=${data.id}">${data.title}</a> <a class="nombre-disco" href="./detalledisco.html?id=${data.id}"><img src="${data.cover}" alt="${data.title}"></a>
+                             <a class="nombre-disco" href="./detalledisco.html?id=${data.id}">${data.title}</a>
+                             <a class="nombre-disco" href="./detalledisco.html?id=${data.id}"><img src="${data.cover}" alt="${data.title}"></a>
                              <a href="./detallesartista.html?id=${data.artist.id}">${data.artist.name}</a>
                              <a href="./detail-genres.html?id=${data.genres.data[0].id}">${data.genres.data[0].name}</a>
                              <p>Fecha de publicación del disco: ${data.release_date}</p>
