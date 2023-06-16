@@ -131,7 +131,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 130px;
+    width: 10vw;
     padding: 3vw 0vw 3vw 0vw;
     justify-content: center;
     align-items: center;
