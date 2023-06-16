@@ -614,3 +614,110 @@ body .cuerpo {
     text-decoration: none; 
 
 }
+
+.contenedor-detalle-artistas article h2 a{
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 1vw;
+    font-weight: normal;
+    text-decoration: none; 
+}
+
+.contenedor-detalle-artistas {
+   background-color:rgb(97, 27, 128);  
+   border-radius: 2%;
+   padding: 3vw;
+}
+
+/*.contenedor-detalle-disco p{ !!!
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 1.3vw;
+    font-weight: normal;
+    text-decoration: none;    
+}*/
+
+.contenedor-detalle-artistas article h2{
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contenedor-detalle-artistas .detalle-artista .nombre-artista{
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media(max-width: 988px) {
+    .contenedor-canciones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+    .bloque-cancion{
+        flex-direction: column;
+        width: 20vw;
+    }
+    .contenedor-album{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+    .bloque-album{
+        flex-direction: column;
+        width: 20vw;
+    }
+    .contenedor-artista{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;   
+    }
+    .bloque-artista{
+        flex-direction: column;
+        width: 20vw;
+    }
+    header {
+        width: 80vw;
+        height: 85vh;
+        flex-direction: column;
+    }
+    .logo {
+        width: 20vw;
+    }
+    .menu{
+        width: 65vw;
+    }
+    .menu li{
+        padding: 1vw 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #buscador{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #busqueda{
+        width: 50vw;
+        height: 4vh;
+    }
+    #enviarform{
+        width: 10vw;
+        margin: 1vw;
+    }
+    .contenedor-buscador{
+        align-self: center;
+        width: 80vw;
+        justify-content: center;
+    }
+}
