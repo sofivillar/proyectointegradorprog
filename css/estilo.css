@@ -746,7 +746,7 @@ body .cuerpo {
         height: 4vh;
     }
     #enviarform{
-        width: 10vw;
+        width: 20vw;
         margin: 1vw;
     }
     .contenedor-buscador{
@@ -803,5 +803,8 @@ body .cuerpo {
         align-items: center;
         height: 280vw;
         width: 40vw;
+     }
+     .favs{
+        height: 15vw;
      }
 }
