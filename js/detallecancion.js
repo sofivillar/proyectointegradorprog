@@ -22,7 +22,7 @@ fetch(url)
                    <audio controls><source src="${data.preview}" type="audio/mpeg">Your browser does not support the audio element.</audio>
                 </article>
         </article>`
-        contenedorCancion.innerHTML += cancion
+        contenedorCancion.innerHTML = cancion
         titulo.innerText = `Detalles de la canción: ${data.title}`
 
     })

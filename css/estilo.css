@@ -14,35 +14,42 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-family: 'Jost', sans-serif;
 
 }
 
 ul,
 ol {
     padding: 0;
+    font-family: 'Jost', sans-serif;
 }
 
 li {
     list-style-type: none;
     color: white;
+    font-family: 'Jost', sans-serif;
 }
 
 a {
     text-decoration: none;
+    font-family: 'Jost', sans-serif;
     color: white;
 }
 
 p {
     margin: 0;
     color: white;
+    font-family: 'Jost', sans-serif;
 }
 
 h1 {
     color: white;
+    font-family: 'Jost', sans-serif;
 }
 
 h2 {
     color: white;
+    font-family: 'Jost', sans-serif;
 }
 
 header {
@@ -51,6 +58,7 @@ header {
     align-items: center;
     height: 35vh;
     padding: 5vw 0vw;
+    font-family: 'Jost', sans-serif;
 }
 
 .contenedor-logo {
@@ -95,11 +103,13 @@ header {
     border-radius: 0.9vw;
     border-color: rgb(50, 17, 121);
     padding: 0.5vw 1vw;
+    font-family: 'Jost', sans-serif;
 }
 
 .menu li a {
     font-size: 2vw;
     color: white;
+    font-family: 'Jost', sans-serif;
 }
 
 #enviarform {
@@ -274,10 +284,12 @@ header {
 .nombre-artista {
     display: flex;
     justify-content: center;
+    font-family: 'Jost', sans-serif;
 }
 
 .titulo {
     color: white;
+    font-family: 'Jost', sans-serif;
 }
 
 footer ul {
@@ -299,6 +311,7 @@ footer ul li {
     background-color: rgb(89, 12, 122);
     color: rgb(212, 121, 251);
     border-radius: 0.9vw;
+    font-family: 'Jost', sans-serif;
 }
 
 body .cuerpo {
@@ -306,6 +319,7 @@ body .cuerpo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Jost', sans-serif;
 }
 
 .detalle-disco {
@@ -341,6 +355,7 @@ body .cuerpo {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    font-family: 'Jost', sans-serif;
 }
 
 .contenedor-detalle-generos {
@@ -364,9 +379,18 @@ body .cuerpo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     width: 95vw;
     background-color: rgb(146, 40, 192);
     border-radius: 2vw;
+    }
+
+.contenedor-detalle-generos-mas li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .lds-ring {
@@ -430,8 +454,6 @@ body .cuerpo {
     border-radius: 2%;
 }
 
-
-
 .contenedor-detalle-artistas {
     display: flex;
     flex-direction: column;
@@ -453,6 +475,8 @@ body .cuerpo {
     background-color: rgb(146, 40, 192);
     margin: 2vw;
     border-radius: 3%;
+    width: 15vw;
+    height: 30vw;
 }
 
 .cont-add-delete-favs{
@@ -471,7 +495,8 @@ body .cuerpo {
     border-color: rgb(58, 14, 112);
     font-weight: bold;
     width: 12vw;
-    height: 5vh;    
+    height: 5vh; 
+    font-family: 'Jost', sans-serif;   
 }
 
 .cont-add-delete-favs a{
@@ -500,6 +525,7 @@ body .cuerpo {
     align-items: center;
     flex-wrap: wrap;
     font-size: 1.7vw;
+    font-family: 'Jost', sans-serif;
 }
 
 /* .boton-ver-mas{
@@ -533,6 +559,7 @@ body .cuerpo {
     font-weight: bold;
     width: 8vw;
     height: 4vh;
+    font-family: 'Jost', sans-serif;
 }
 
 .boton-ver-mas-albumes{
@@ -545,6 +572,7 @@ body .cuerpo {
     font-weight: bold;
     width: 8vw;
     height: 4vh;
+    font-family: 'Jost', sans-serif;
 }
 
 .boton-ver-mas-artistas{
@@ -557,6 +585,7 @@ body .cuerpo {
     font-weight: bold;
     width: 8vw;
     height: 4vh;
+    font-family: 'Jost', sans-serif;
 }
 
 .boton-ver-mas-generos{
@@ -569,6 +598,7 @@ body .cuerpo {
     font-weight: bold;
     width: 8vw;
     height: 4vh;
+    font-family: 'Jost', sans-serif;
 }
 
 .lista-detalle-generos-mas li h3{
@@ -580,10 +610,11 @@ body .cuerpo {
 
 .contenedor-detalle-disco ul li a{
     color: white;
-    font-family:'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 1vw;
     font-weight: normal;
-    text-decoration: none;    
+    text-decoration: none;  
+    font-family: 'Jost', sans-serif;  
 }
 .contenedor-detalle-disco ul {
    background-color:rgb(97, 27, 128);   
@@ -593,22 +624,24 @@ body .cuerpo {
 
 .contenedor-detalle-disco p{
     color: white;
-    font-family:'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 1.3vw;
     font-weight: normal;
-    text-decoration: none;    
+    text-decoration: none; 
+    font-family: 'Jost', sans-serif;   
 }
 .contenedor-detalle-disco article a{
     color: white;
-    font-family:'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 2vw;
     font-weight: bold;
     text-decoration: none; 
+    font-family: 'Jost', sans-serif;
 
 }
 .contenedor-detalle-disco .detalle-disco .nombre-disco{
     color: white;
-    font-family:'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 3vw;
     font-weight: bold;
     text-decoration: none; 
@@ -617,10 +650,11 @@ body .cuerpo {
 
 .contenedor-detalle-artistas article h2 a{
     color: white;
-    font-family:'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 1vw;
     font-weight: normal;
     text-decoration: none; 
+    font-family: 'Jost', sans-serif;
 }
 
 .contenedor-detalle-artistas {
@@ -639,7 +673,7 @@ body .cuerpo {
 
 .contenedor-detalle-artistas article h2{
     color: white;
-    font-family:'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 2vw;
     font-weight: bold;
     text-decoration: none;
@@ -647,7 +681,7 @@ body .cuerpo {
 
 .contenedor-detalle-artistas .detalle-artista .nombre-artista{
     color: white;
-    font-family:'Lato', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 3vw;
     font-weight: bold;
     text-decoration: none;
@@ -662,7 +696,7 @@ body .cuerpo {
     }
     .bloque-cancion{
         flex-direction: column;
-        width: 20vw;
+        width: 35vw;
     }
     .contenedor-album{
         flex-direction: column;
@@ -720,4 +754,54 @@ body .cuerpo {
         width: 80vw;
         justify-content: center;
     }
+    audio{
+        width: 30vw;
+    }
+    .contenedor-generos {
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+     }
+    .contenedor-detalle-generos {
+        flex-direction: column;
+        align-items: center;
+     }
+    .contenedor-detalle-canciones {
+     width: 40vw;
+     display: flex;
+     justify-content: center;
+    }
+
+    .bloque-detalle-generos{
+        width: 40vw;
+        height: 50vw;
+    }
+
+    .boton-ver-mas-canciones{
+    width: 20vw;}
+
+    .boton-ver-mas-albumes{
+        width: 20vw;
+    }
+     
+    .boton-ver-mas-artistas{
+    width: 20vw;
+    }
+     
+     .boton-ver-mas-generos{
+    width: 20vw;
+     }
+     
+     .contenedor-detalle-generos-mas{
+        display: none;
+     }
+
+     .contenedor-detalle-generos-mas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 280vw;
+        width: 40vw;
+     }
 }
