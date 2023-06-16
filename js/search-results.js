@@ -114,7 +114,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
             cancionesMas += "<p>No hay resultados para su búsqueda</p>"
             contenedorVerMas.innerHTML = cancionesMas
         } else {
-            for (let i = 5; i < 11; i++) {
+            for (let i = 5; i < 10; i++) {
                 cancionesMas += `<article class= "bloque-cancion-mas"> 
                 <h3> <a class="nombre-cancion-mas" href="./detallecancion.html?id=${arrayCancionesMas[i].id}">${arrayCancionesMas[i].title}</a></h3>
                 <a class="nombre-cancion-mas" href="./detallecancion.html?id=${arrayCancionesMas[i].id}"><img src="${arrayCancionesMas[i].album.cover}" alt="${arrayCancionesMas[i].title}"></a> 
@@ -162,7 +162,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q
             albumesMas += "<p>No hay resultados para su búsqueda</p>"
             contenedorVerMasAlbumes.innerHTML = albumesMas
         } else {
-            for (let i = 5; i < 11; i++) {
+            for (let i = 5; i < 10; i++) {
                 albumesMas += `<article class= "bloque-album-mas"> <h3> <a class="nombre-album-mas" href="./detalledisco.html?id=${arrayAlbumesMas[i].id}">${arrayAlbumesMas[i].title}</a></h3>
                 <a class="nombre-album" href="./detalledisco.html?id=${arrayAlbumesMas[i].id}"><img src="${arrayAlbumesMas[i].cover}" alt="${arrayAlbumesMas[i].title}"></a>
                             <article class="bloque-album-datos">
@@ -208,7 +208,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
             artistasMas += "<p>No hay resultados para su búsqueda</p>"
             contenedorVerMasArtistas.innerHTML = artistasMas
         } else {
-            for (let i = 5; i < 11; i++) {
+            for (let i = 5; i < 10; i++) {
                 artistasMas += `<article class= "bloque-artista-mas"> <h3> <a class="nombre-artista-mas" href="./detallesartista.html?id=${arrayArtistasMas[i].id}">${arrayArtistasMas[i].name}</a></h3>
             <a class="nombre-artista-mas" href="./detallesartista.html?id=${arrayArtistasMas[i].id}"><img src="${arrayArtistasMas[i].picture}" alt="${arrayArtistasMas[i].name}"></a>
                 <article class="bloque-artista-datos">

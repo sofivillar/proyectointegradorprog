@@ -316,6 +316,7 @@ body .cuerpo {
     flex-wrap: wrap;
 }
 
+
 .contenedor-generos {
     display: flex;
     flex-wrap: wrap;
@@ -428,6 +429,8 @@ body .cuerpo {
     padding: 5vw;
     border-radius: 2%;
 }
+
+
 
 .contenedor-detalle-artistas {
     display: flex;
@@ -566,4 +569,48 @@ body .cuerpo {
     font-weight: bold;
     width: 8vw;
     height: 4vh;
+}
+
+.lista-detalle-generos-mas li h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-detalle-disco ul li a{
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 1vw;
+    font-weight: normal;
+    text-decoration: none;    
+}
+.contenedor-detalle-disco ul {
+   background-color:rgb(97, 27, 128);   
+   border-radius: 2%;
+   padding: 3vw;
+}
+
+.contenedor-detalle-disco p{
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 1.3vw;
+    font-weight: normal;
+    text-decoration: none;    
+}
+.contenedor-detalle-disco article a{
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: none; 
+
+}
+.contenedor-detalle-disco .detalle-disco .nombre-disco{
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    text-decoration: none; 
+
 }

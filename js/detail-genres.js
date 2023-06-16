@@ -64,7 +64,7 @@ fetch(urlArtistasGeneros)
         console.log(data)
         let arrayArtistasMas = data.data;
         console.log(arrayArtistasMas);
-        for (let i = 5; i < 11; i++) {
+        for (let i = 5; i < 10; i++) {
             generosMas += `<article class= "bloque-detalle-generos-mas"> <ul class="lista-detalle-generos-mas"> <li> <h3> <a class="detalle-generos-mas" href="./detallesartista.html?id=${arrayArtistasMas[i].id}">${arrayArtistasMas[i].name}</a> </h3> 
             <a class="detalle-generos-mas" href="./detallesartista.html?id=${arrayArtistasMas[i].id}"><img class="imagen-artista-generos-mas" src="${arrayArtistasMas[i].picture}" alt="${arrayArtistasMas[i].name}"></a>
             </li> </ul> 
