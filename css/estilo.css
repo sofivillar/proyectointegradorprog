@@ -434,6 +434,10 @@ body .cuerpo {
 
 } */
 
-.ver-mas{
+.ver-mas-canciones{
+    display: none;
+}
+
+.ver-mas-albumes{
     display: none;
 }

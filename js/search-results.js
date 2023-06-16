@@ -100,7 +100,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
 
 
 
-let contenedorVerMas = document.querySelector(".ver-mas")
+let contenedorVerMasCanciones = document.querySelector(".ver-mas-canciones")
 let cancionesMas = ""
 
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${busqueda}`)
@@ -123,7 +123,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
                     <a href="./detallesartista.html?id=${arrayCancionesMas[i].artist.id}">${arrayCancionesMas[i].artist.name}</a>  
                 </article>
                 </article>`
-                contenedorVerMas.innerHTML = cancionesMas
+                contenedorVerMasCanciones.innerHTML = cancionesMas
             }
         }
 
@@ -132,20 +132,62 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
         console.log(e);
     })
 
-    let botonVerMas = document.querySelector(".boton-ver-mas")
+let botonVerMasCanciones = document.querySelector(".boton-ver-mas-canciones")
 
-    botonVerMas.addEventListener("click", function(){
-        if(botonVerMas.innerText == "Ver mas"){
-            botonVerMas.innerText= "Ver menos"
-            contenedorVerMas.style.display = "flex"
-        } else{
-            botonVerMas.innerText= "Ver mas"
-            contenedorVerMas.style.display = "none"
+botonVerMasCanciones.addEventListener("click", function () {
+    if (botonVerMasCanciones.innerText == "Ver mas") {
+        botonVerMasCanciones.innerText = "Ver menos"
+        contenedorVerMasCanciones.style.display = "flex"
+    } else {
+        botonVerMasCanciones.innerText = "Ver mas"
+        contenedorVerMasCanciones.style.display = "none"
+    }
+
+})
+
+
+
+let contenedorVerMasAlbumes = document.querySelector(".ver-mas-albumes")
+let albumesMas = ""
+
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${busqueda}`)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+        let arrayAlbumesMas = data.data
+        console.log(arrayAlbumesMas);
+        if (arrayAlbumesMas.length == 0) {
+            albumesMas += "<p>No hay resultados para su búsqueda</p>"
+            contenedorVerMasAlbumes.innerHTML = albumesMas
+        } else {
+            for (let i = 5; i < 11; i++) {
+                albumesMas += `<article class= "bloque-album-mas"> <h3> <a class="nombre-album-mas" href="./detalledisco.html?id=${arrayAlbumesMas[i].id}">${arrayAlbumesMas[i].title}</a></h3>
+                <a class="nombre-album" href="./detalledisco.html?id=${arrayAlbumesMas[i].id}"><img src="${arrayAlbumesMas[i].cover}" alt="${arrayAlbumesMas[i].title}"></a>
+                            <article class="bloque-album-datos">
+                                <a href="./detallesartista.html?id=${arrayAlbumesMas[i].artist.id}">${arrayAlbumesMas[i].artist.name}</a>  
+                            </article>
+                        </article>`
+                contenedorVerMasAlbumes.innerHTML = albumesMas
+            }
         }
-
+    })
+    .catch(function (e) {
+        console.log(e);
     })
 
 
+let botonVerMasAlbumes = document.querySelector(".boton-ver-mas-albumes")
 
+botonVerMasAlbumes.addEventListener("click", function () {
+    if (botonVerMasAlbumes.innerText == "Ver mas") {
+        botonVerMasAlbumes.innerText = "Ver menos"
+        contenedorVerMasAlbumes.style.display = "flex"
+    } else {
+        botonVerMasAlbumes.innerText = "Ver mas"
+        contenedorVerMasAlbumes.style.display = "none"
+    }
 
+})
 
