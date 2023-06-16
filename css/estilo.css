@@ -127,6 +127,26 @@ header {
     border-radius: 2vw;
 }
 
+.ver-mas-canciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2vw;
+    width: 95vw;
+    background-color: rgb(146, 40, 192);
+    border-radius: 2vw;
+}
+
+.ver-mas-canciones article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 10vw;
+    padding: 3vw 0vw 3vw 0vw;
+    justify-content: center;
+    align-items: center;
+}
+
 .bloque-cancion {
     display: flex;
     flex-wrap: wrap;
@@ -155,6 +175,26 @@ header {
     width: 95vw;
     background-color: rgb(146, 40, 192);
     border-radius: 2vw;
+}
+
+.ver-mas-albumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2vw;
+    width: 95vw;
+    background-color: rgb(146, 40, 192);
+    border-radius: 2vw;
+}
+
+.ver-mas-albumes article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 10vw;
+    padding: 3vw 0vw 3vw 0vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .bloque-album {
@@ -187,6 +227,26 @@ header {
     width: 95vw;
     background-color: rgb(146, 40, 192);
     border-radius: 2vw;
+}
+
+.ver-mas-artistas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2vw;
+    width: 95vw;
+    background-color: rgb(146, 40, 192);
+    border-radius: 2vw;
+}
+
+.ver-mas-artistas article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 10vw;
+    padding: 3vw 0vw 3vw 0vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .bloque-artista {
