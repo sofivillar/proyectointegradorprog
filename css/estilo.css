@@ -445,3 +445,7 @@ body .cuerpo {
 .ver-mas-artistas{
     display: none;
 }
+
+.contenedor-detalle-generos-mas{
+    display: none;
+}

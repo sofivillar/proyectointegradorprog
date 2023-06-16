@@ -47,3 +47,46 @@ fetch(urlArtistasGeneros)
     .catch(function (error) {
         console.log("Error: " + error);
     })
+
+
+
+
+
+
+let contenedorVerMasGeneros = document.querySelector(".contenedor-detalle-generos-mas")
+let generosMas = ""
+
+fetch(urlArtistasGeneros)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data)
+        let arrayArtistasMas = data.data;
+        console.log(arrayArtistasMas);
+        for (let i = 5; i < 11; i++) {
+            generosMas += `<article class= "bloque-detalle-generos-mas"> <ul class="lista-detalle-generos-mas"> <li> <h3> <a class="detalle-generos-mas" href="./detallesartista.html?id=${arrayArtistasMas[i].id}">${arrayArtistasMas[i].name}</a> </h3> 
+            <a class="detalle-generos-mas" href="./detallesartista.html?id=${arrayArtistasMas[i].id}"><img class="imagen-artista-generos-mas" src="${arrayArtistasMas[i].picture}" alt="${arrayArtistasMas[i].name}"></a>
+            </li> </ul> 
+            </article>`
+        }
+        contenedorVerMasGeneros.innerHTML = generosMas
+
+    })
+    .catch(function (error) {
+        console.log("Error: " + error);
+    })
+
+
+let botonVerMasGeneros = document.querySelector(".boton-ver-mas-generos")
+
+botonVerMasGeneros.addEventListener("click", function () {
+    if (botonVerMasGeneros.innerText == "Ver mas") {
+        botonVerMasGeneros.innerText = "Ver menos"
+        contenedorVerMasGeneros.style.display = "flex"
+    } else {
+        botonVerMasGeneros.innerText = "Ver mas"
+        contenedorVerMasGeneros.style.display = "none"
+    }
+
+})
